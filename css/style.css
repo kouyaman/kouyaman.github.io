@@ -54,30 +54,34 @@ body {
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 .content p{
-	font-size: 30px;
+	font-size: 35px;
 	line-height: 60px;
 	color: #EEEEEE;
 	display: inline-block;
 	background: 1253A4;
-	padding: 5px 0px 5px 50px;
+	padding: 5px 0px 5px 130px;
 	margin: 3px 0px;
 }
 .content p2{
-	font-size: 22px;
+	font-size: 25px;
 	line-height: 24px;
 	color: #EEEEEE;
 	display: inline-block;
 	background: 1253A4;
-	padding: 5px 0px 5px 70px;
+	padding: 5px 0px 5px 160px;
 	margin: 3px 0px;
 }
 .content p3{
-	font-size: 22px;
 	line-height: 24px;
-	color: #DE4830;
 	display: inline-block;
 	background: 1253A4;
 	font-weight: bold;
+	color: rgba(222,72,48,0.9);
+	text-shadow:
+		-1px -1px rgba(238,238,238,0.9),
+		1px -1px rgba(238,238,238,0.9),
+		-1px 1px rgba(238,238,238,0.9),
+		1px 1px rgba(238,238,238,0.9);
 }
 .panel{
 	min-width: 100%;
@@ -174,8 +178,8 @@ body {
 	color: #ddd;
 }
 table.brwsr2 {
-    margin: 10px 0px 10px 50px;;
-    width: 1000px;
+    margin: 10px 0px 10px 170px;
+    width: 1200px;
     border: none;
     border-top: solid 1px #666;
     border-bottom: solid 1px #666;
