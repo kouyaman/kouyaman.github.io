@@ -45,9 +45,9 @@ abbr,acronym { border:0;
 body{
 /*
 	font-family: 'Eczar', '刻明朝 Regular', Meiryo UI, Arial, sans-serif;
-	font-family: 'Eczar', 'ほのかアンティーク丸', Meiryo UI, Arial, sans-serif;
-*/
 	font-family: Meiryo UI, Arial, sans-serif;
+*/
+	font-family: 'Eczar', 'ほのかアンティーク丸', Meiryo UI, Arial, sans-serif;
 	font-weight: 500;
 	font-size: 15px;
 	color: #fff;
