@@ -2,6 +2,7 @@
 
 var btn = document.getElementById('btn');
 var content = document.getElementById('content');
+var speak = document.getElementById('speak');
 
 //音声認識APIの使用
 var speech = new webkitSpeechRecognition();
