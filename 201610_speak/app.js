@@ -20,10 +20,14 @@ speech.addEventListener( 'result' , function( e ) {
 	var text = e.results[0][0].transcript;
 	content.textContent = text;
 
-	//認識された「言葉(text)」を、音声合成
+} );
+
+speak.addEventListener( 'click' , function() {
+
+	//音声合成
 	var ssu = new SpeechSynthesisUtterance();
 	ssu.lang = 'ja-JP';
-	ssu.text = 'うんうん、' + text + '、だよね。';
+	ssu.text = content.textContent;
 	speechSynthesis.speak(ssu);
 
 } );
