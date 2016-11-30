@@ -43,7 +43,6 @@ speak.addEventListener("click", function() {
 		ssu.pitch = pitch.value;
 
 		speechSynthesis.speak(ssu);
-		ssu = null;
 	}
 } );
 
