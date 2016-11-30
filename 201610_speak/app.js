@@ -43,14 +43,10 @@ speak.addEventListener("click", function() {
 		ssu.pitch = pitch.value;
 
 		speechSynthesis.speak(ssu);
-		ssu = null;
 	}
 } );
 
 cancel.addEventListener("click", function() {
 
-	if (ssu != null) {
-		speechSynthesis.cancel(ssu);
-		ssu = null;
-	}
+	speechSynthesis.cancel(ssu);
 } );
