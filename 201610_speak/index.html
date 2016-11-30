@@ -13,6 +13,8 @@
 		<h3>Web Speech APIサンプル</h3>
 
 		<button id="btn">音声認識開始</button>
+		<br>
+
 		<div id="content">
 タクシー会社チェッカーキャブは11月30日、28日に覚醒剤取締法違反（使用）の疑いで逮捕されたASKA容疑者が逮捕直前に乗車していたタクシーの車内映像をテレビ各局に提供したことを認め、謝罪した。【山崎春奈 / BuzzFeed Japan】
 
@@ -66,36 +68,35 @@ ASKA容疑者の逮捕直前タクシー映像、流出元が謝罪「再発防�
 
 データは営業所ごとに管理者を置いて管理。事故やトラブルがあった時に教育や研修として使うことはあるが、外部の第三者に見せることはない。
 		</div>
-
-		<br>
 		<br>
 
 		<select name="rate" id="rate">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
-			<option value="3">3</option>
+			<option value="3" selected>3</option>
 			<option value="4">4</option>
-			<option value="5" selected>5</option>
+			<option value="5">5</option>
 			<option value="6">6</option>
 			<option value="7">7</option>
 			<option value="8">8</option>
 			<option value="9">9</option>
 			<option value="10">10</option>
 		</select>
-
 		<br>
 
 		<select name="pitch" id="pitch">
 			<option value="0">0</option>
-			<option value="1" selected>1</option>
-			<option value="2">2</option>
+			<option value="1">1</option>
+			<option value="2" selected>2</option>
 		</select>
-
 		<br>
 		<br>
 
 		<button id="speak">音声再生</button>
+		<br>
+
+		<button id="cancel">音声停止</button>
 
 		<script src="app.js"></script>
 	</body>

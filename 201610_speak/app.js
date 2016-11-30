@@ -3,10 +3,13 @@
 var btn = document.getElementById("btn");
 var content = document.getElementById("content");
 var speak = document.getElementById("speak");
+var cancel = document.getElementById("cancel");
 
 //音声認識APIの使用
 var speech = new webkitSpeechRecognition();
 speech.lang = "ja";
+
+var ssu = null;
 
 btn.addEventListener("click", function() {
 
@@ -30,7 +33,7 @@ speak.addEventListener("click", function() {
 
 	if (content.textContent != "") {
 		//音声合成
-		var ssu = new SpeechSynthesisUtterance();
+		ssu = new SpeechSynthesisUtterance();
 		ssu.text = content.textContent;
 		ssu.lang = 'ja-JP';
 
@@ -40,5 +43,14 @@ speak.addEventListener("click", function() {
 		ssu.pitch = pitch.value;
 
 		speechSynthesis.speak(ssu);
+		ssu = null;
+	}
+} );
+
+cancel.addEventListener("click", function() {
+
+	if (ssu != null) {
+		speechSynthesis.cancel(ssu);
+		ssu = null;
 	}
 } );
