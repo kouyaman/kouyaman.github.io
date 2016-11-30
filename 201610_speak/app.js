@@ -28,9 +28,6 @@ speak.addEventListener("click", function() {
 	var rate = document.getElementById("rate");
 	var pitch = document.getElementById("pitch");
 
-alert(rate.value);
-alert(pitch.value);
-
 	if (content.textContent != "") {
 		//音声合成
 		var ssu = new SpeechSynthesisUtterance();
