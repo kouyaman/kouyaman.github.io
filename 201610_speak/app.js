@@ -42,11 +42,15 @@ speak.addEventListener("click", function() {
 		// 音程 min 0 ~ max 2
 		ssu.pitch = pitch.value;
 
+alert(ssu);
+
 		speechSynthesis.speak(ssu);
 	}
 } );
 
 cancel.addEventListener("click", function() {
+
+alert(ssu);
 
 	speechSynthesis.cancel(ssu);
 } );
