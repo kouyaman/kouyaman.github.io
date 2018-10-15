@@ -43,5 +43,5 @@ speech2.addEventListener("result", function(e) {
 	var int1 = parseInt(text1, 10);
 	var int2 = parseInt(text2, 10);
 	var int3 = int2 - int1;
-	content3.textContent = String(int3);
+	content3.textContent = String(int3) + "円";
 } );
