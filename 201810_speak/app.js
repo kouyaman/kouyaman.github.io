@@ -40,4 +40,8 @@ speech2.addEventListener("result", function(e) {
 	//計算
 	var text1 = content1.textContent;
 	var text2 = content2.textContent;
+	var int1 = parseInt(text1, 10);
+	var int2 = parseInt(text2, 10);
+	var int3 = int2 - int1;
+	content3.textContent = String(int3);
 } );
