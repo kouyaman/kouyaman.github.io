@@ -16,9 +16,9 @@ btn1.addEventListener("click", function() {
 	//音声認識をスタート
 	speech1.start();
 	//クリア
-	content1.textContent = "";
-	content2.textContent = "";
-	content3.textContent = "";
+	content1.textContent = "-----";
+	content2.textContent = "-----";
+	content3.textContent = "-----";
 } );
 speech1.addEventListener("result", function(e) {
 	//認識された「言葉(text)」を、表示用のdivタグに代入する
@@ -30,8 +30,8 @@ btn2.addEventListener("click", function() {
 	//音声認識をスタート
 	speech2.start();
 	//クリア
-	content2.textContent = "";
-	content3.textContent = "";
+	content2.textContent = "-----";
+	content3.textContent = "-----";
 } );
 speech2.addEventListener("result", function(e) {
 	//認識された「言葉(text)」を、表示用のdivタグに代入する
